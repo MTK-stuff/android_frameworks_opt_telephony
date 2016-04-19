@@ -1,4 +1,3 @@
-
 /*
  * Copyright (C) 2008 The Android Open Source Project
  *
@@ -667,10 +666,6 @@ public abstract class IccFileHandler extends Handler implements IccConstants {
             return MF_SIM + DF_TELECOM + DF_GRAPHICS;
         }
         return null;
-    }
-
-    public boolean needsFakeIccid() {
-        return mCi.needsOldRilFeature("fakeiccid");
     }
 
     protected abstract String getEFPath(int efid);
